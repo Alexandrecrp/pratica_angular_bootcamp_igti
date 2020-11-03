@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col"></div>
+  <div class="col">
+    <div class="alert alert-dark">
+      <div class="text-center">
+        <img [src]="imageToShow" class="img-thumbnail" />
+        <div class="card-body">
+          <h5 class="card-title">Pictures</h5>
+          <p class="card-text">
+            <small class="text-muted"
+              >{{ incrementa }} de {{ totalimagem }}</small
+            >
+          </p>
+          <button [disabled]="index <= 0" (click)="first()">|<</button>
+          <button [disabled]="index <= 0" (click)="prev()"><</button>
+          <button [disabled]="index >= 4" (click)="next()">></button>
+          <button [disabled]="index >= 4" (click)="last()">>|</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col"></div>
+</div>
